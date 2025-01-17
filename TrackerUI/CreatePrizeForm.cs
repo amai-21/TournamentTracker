@@ -16,5 +16,15 @@ namespace TrackerUI
         {
             InitializeComponent();
         }
+
+        private void firstNameValue_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CreatePrizeForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
