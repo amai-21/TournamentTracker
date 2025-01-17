@@ -16,5 +16,20 @@ namespace TrackerUI
         {
             InitializeComponent();
         }
+
+        private void tournamentNameValue_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void teamOneScoreLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void selectTeamMemberDropDown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
