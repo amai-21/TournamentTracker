@@ -31,5 +31,10 @@ namespace TrackerUI
         {
 
         }
+
+        private void CreateTeamForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
