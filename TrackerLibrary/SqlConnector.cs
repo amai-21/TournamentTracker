@@ -13,7 +13,7 @@ namespace TrackerLibrary
         /// Saves a new prize to the database.
         /// </summary>
         /// <param name="model">The prize information</param>
-        /// <returns>The prize infomation, including the unqieu identifier.</returns>
+        /// <returns>The prize infomation, including the unqiue identifier.</returns>
         public PrizeModel CreatePrize(PrizeModel model)
         {
             model.Id = 1;
