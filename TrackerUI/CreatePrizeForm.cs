@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -34,11 +35,16 @@ namespace TrackerUI
         {
             if (ValidateForm())
             {
+                // Log the PlaceName value before creating the model:
+                Debug.WriteLine($"PlaceNameValue.Text: {placeNameValue.Text}");
+
                 PrizeModel model = new PrizeModel(
                     placeNameValue.Text, 
                     placeNumberValue.Text, 
                     prizeAmountValue.Text, 
                     prizePercentageValue.Text);
+
+                Debug.WriteLine($"PrizeModel.PlaceName: { model.PlaceName}");
 
                 foreach (IDataConnection db in GlobalConfig.Connections)
                 {
