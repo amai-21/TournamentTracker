@@ -35,8 +35,7 @@ namespace TrackerUI
         {
             if (ValidateForm())
             {
-                // Log the PlaceName value before creating the model:
-                Debug.WriteLine($"PlaceNameValue.Text: {placeNameValue.Text}");
+               
 
                 PrizeModel model = new PrizeModel(
                     placeNameValue.Text, 
@@ -44,12 +43,11 @@ namespace TrackerUI
                     prizeAmountValue.Text, 
                     prizePercentageValue.Text);
 
-                Debug.WriteLine($"PrizeModel.PlaceName: { model.PlaceName}");
+               
 
-                foreach (IDataConnection db in GlobalConfig.Connections)
-                {
-                    db.CreatePrize(model);
-                }
+                
+                 GlobalConfig.Connection.CreatePrize(model);
+                
 
                 placeNameValue.Text = "";
                 placeNumberValue.Text = "";
