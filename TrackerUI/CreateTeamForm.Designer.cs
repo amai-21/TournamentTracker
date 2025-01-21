@@ -57,7 +57,7 @@
             teamNameValue.Name = "teamNameValue";
             teamNameValue.Size = new Size(388, 43);
             teamNameValue.TabIndex = 13;
-            teamNameValue.TextChanged += tournamentNameValue_TextChanged;
+            
             // 
             // teamNameLabel
             // 
@@ -69,7 +69,6 @@
             teamNameLabel.Size = new Size(197, 46);
             teamNameLabel.TabIndex = 12;
             teamNameLabel.Text = "Team Name";
-         //   teamNameLabel.Click += this.tournamentNameLabel_Click;
             // 
             // headerLabel
             // 
@@ -81,7 +80,6 @@
             headerLabel.Size = new Size(272, 62);
             headerLabel.TabIndex = 11;
             headerLabel.Text = "Create Team";
-          //  headerLabel.Click += this.headerLabel_Click;
             // 
             // addMemberButton
             // 
@@ -112,7 +110,7 @@
             selectTeamMemberLabel.AutoSize = true;
             selectTeamMemberLabel.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
             selectTeamMemberLabel.ForeColor = Color.FromArgb(51, 153, 255);
-            selectTeamMemberLabel.Location = new Point(84, 272);
+            selectTeamMemberLabel.Location = new Point(84, 299);
             selectTeamMemberLabel.Name = "selectTeamMemberLabel";
             selectTeamMemberLabel.Size = new Size(335, 46);
             selectTeamMemberLabel.TabIndex = 17;
@@ -146,12 +144,13 @@
             createMemberButton.FlatStyle = FlatStyle.Flat;
             createMemberButton.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             createMemberButton.ForeColor = Color.FromArgb(51, 153, 255);
-            createMemberButton.Location = new Point(106, 364);
+            createMemberButton.Location = new Point(86, 361);
             createMemberButton.Name = "createMemberButton";
-            createMemberButton.Size = new Size(205, 58);
+            createMemberButton.Size = new Size(277, 58);
             createMemberButton.TabIndex = 20;
             createMemberButton.Text = "Create Member";
             createMemberButton.UseVisualStyleBackColor = true;
+            createMemberButton.Click += createMemberButton_Click;
             // 
             // cellphoneValue
             // 
@@ -224,7 +223,7 @@
             firstNameLabel.Size = new Size(181, 46);
             firstNameLabel.TabIndex = 9;
             firstNameLabel.Text = "First Name";
-            firstNameLabel.Click += teamOneScoreLabel_Click;
+            
             // 
             // teamMembersListBox
             // 
@@ -271,7 +270,7 @@
             AutoScaleDimensions = new SizeF(15F, 37F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1350, 1176);
+            ClientSize = new Size(1702, 1146);
             Controls.Add(createTeamButton);
             Controls.Add(deleteSelectedMemberButton);
             Controls.Add(teamMembersListBox);
@@ -287,7 +286,7 @@
             Margin = new Padding(6);
             Name = "CreateTeamForm";
             Text = "Create Team";
-            Load += CreateTeamForm_Load;
+           
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
